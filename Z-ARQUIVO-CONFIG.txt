@@ -1,0 +1,5 @@
+Pra conseguir importar o json diretamente:
+    arquivo tsconfig.json, colocar esse codigo em "compilerOptions"
+
+        "resolveJsonModule": true,
+        "allowSyntheticDefaultImports": true,

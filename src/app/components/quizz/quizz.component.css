@@ -1,0 +1,77 @@
+.quizz__container{
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.quizz_logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.quizz_logo > h3{
+    margin-top: 20px;
+}
+
+.quizz_questions{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #4224d9;
+    border-radius: 8px;
+    background-color: #644ed2;
+    width: 100%;
+    height: 200px;
+    font-size: 20px;
+    font-family: 'Segoe UI';
+    margin-bottom: 20px;
+}
+
+.quizz_options{
+    display: flex;
+    flex-wrap: wrap;  /* fazer a quebra automatica de linha, vai dar o efeito de se aparecer 
+                         mais botões ele ir jogando pro lado e pra baixo*/
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.btn-option{
+    background-color: transparent;  /* pra deixar o botão transparente e fazer o hover */
+    border-radius: 8px;
+    border: 1px solid #18ab29;
+    width: 50%;  /* vai ocupar 50% da linha, se tiver 2 botões eles vão ocupar 100% */
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 17px;
+    padding: 16px 31px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #2f6627;
+}
+
+.btn-option:hover{
+    background-color: #5cbf2a;  /* pra dar o efeito no botão que esta transparente */
+}
+
+/* simular uma animação de click */
+.btn-option:active{  /* quando o botão é clicado */
+    position: relative;  /* relative, é pra conseguir mexer nas coordenadas */
+    top: 1px;  /* pra simular uma animação de click */
+}
+
+.quizz_results{
+    width: 100%;
+    height: 350px;
+    background-color: #1f0539;
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
